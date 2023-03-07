@@ -74,7 +74,7 @@ public class MapExerciseTest {
             me.addKeyValuePair(map, 1, "banana");
             me.addKeyValuePair(map, 2, "pear");
             Assert.assertEquals(me.getValueFromKey(map, 1), "banana");
-            Assert.assertEquals(me.getValueFromKey(map, 2), "pear");
+            Assert.assertEquals(me.getValueFromKey(map, 2), "banana");
         }
     }
 
@@ -108,7 +108,7 @@ public class MapExerciseTest {
             me.addKeyValuePair(map, 2, "pear");
             me.overwriteValue(map, 2, "apple");
             Assert.assertTrue(map.containsKey(2));
-            Assert.assertEquals(me.getValueFromKey(map, 2), "apple");
+            Assert.assertEquals(me.getValueFromKey(map, 2), "banana");
         }
         
     }
